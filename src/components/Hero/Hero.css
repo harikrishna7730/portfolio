@@ -1,0 +1,21 @@
+
+.Hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.hero-content{
+  width: 600px; 
+  color:white;
+}
+.hero-content h1{
+    font-size: 55px;
+}
+
+.hero-content .Auto-type{
+    color: blueviolet;
+}

@@ -1,0 +1,8 @@
+body{
+  background: #38455e;
+  background: linear-gradient(72deg, rgba(56, 69, 94, 1) 0%, rgba(77, 77, 179, 1) 48%, rgba(9, 9, 118, 1) 84%, rgba(9, 9, 119, 1) 100%, rgba(216, 213, 222, 1) 100%, rgba(194, 148, 227, 1) 100%, rgba(6, 75, 165, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}

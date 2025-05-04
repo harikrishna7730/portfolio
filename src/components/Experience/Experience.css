@@ -1,0 +1,33 @@
+.expo-container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    color: white;
+}
+.expo-content ul{
+    list-style:none;
+}
+.expo-content ul li{
+    font-size: 24px;
+}
+.expo-content{
+    width: 600px;
+}
+.expo-content ul li span{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.Expo-heading{
+    font-size: 55px;
+    text-decoration: underline;
+    padding:25px;
+    color:white;
+    text-align: center;
+
+}
+
