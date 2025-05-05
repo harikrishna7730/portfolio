@@ -6,6 +6,7 @@ const Navbar = () => {
     <header>
       <nav>
         <h1>Portfolio</h1>
+        <div></div>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#experience">Experience</a></li>
