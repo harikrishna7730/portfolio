@@ -62,6 +62,7 @@
   
   .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
+    filter: brightness(0) invert(1);
   }
   
   @keyframes slide-in-top {

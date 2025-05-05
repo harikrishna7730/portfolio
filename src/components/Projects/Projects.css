@@ -1,11 +1,11 @@
 
 
-.project-heading{
-    font-size: 35px;
-    text-decoration: underline;
+.project-heading h1{
+    font-size: 55px;
     padding:25px;
     color:white;
     text-align: center;
+    margin: 50px 10px;
 }
 .projects-main-container{
         display: flex;

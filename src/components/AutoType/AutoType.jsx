@@ -46,7 +46,7 @@ const AutoType = ({ texts, speed = 150, pause = 1000 }) => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex, texts, speed, pause, isFinished]);
 
-  return <span style={{color:"yellow"}}>{displayText}</span>;
+  return <span style={{color:"#D4AF37"}}>{displayText}</span>;
 };
 
 export default AutoType;

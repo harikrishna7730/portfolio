@@ -19,3 +19,29 @@
 .hero-content .Auto-type{
     color: blueviolet;
 }
+.hero-img img{
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+}
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .floating-img {
+    animation: floatUpDown 2.5s ease-in-out infinite;
+    border-radius: 12px; /* optional: smooth corners */
+  }
+  
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

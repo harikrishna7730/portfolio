@@ -1,7 +1,7 @@
-.skills-heading{
-    font-size: 35px;
-    text-decoration: underline;
-    padding:25px;
+.skills-heading h1{
+    font-size: 55px;
+    padding:25px 40px;
+    margin: 50px 10px;
     color:white;
     text-align: center;
 }
