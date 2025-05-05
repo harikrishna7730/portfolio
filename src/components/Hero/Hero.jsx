@@ -6,7 +6,7 @@ import Contacts from '../Contacts/Contacts'
 const Hero = () => {
   return (
    <>
-   <div className='Hero-container'>
+   <div className='Hero-container' id='home'>
     <div className='hero-content'>
      <h1>Hello </h1>
      <h1>I'm  <AutoType texts={["Hari Krishna", "a Web Developer", "MERN Stack developer"]}/></h1>

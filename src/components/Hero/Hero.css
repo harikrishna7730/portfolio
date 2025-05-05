@@ -45,3 +45,27 @@
     }
   }
   
+
+  @media (max-width: 600px) {
+    .Hero-container {
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      overflow: none;
+    }
+  
+    .hero-content {
+      padding: 10px;
+      display: none;
+    }
+  
+    .hero-img {
+   text-align: center;
+    }
+  
+    .floating-img {
+      width: 350px;
+      height: 350px;
+    }
+  }

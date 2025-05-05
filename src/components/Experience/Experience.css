@@ -10,6 +10,8 @@
 }
 .expo-content ul{
     list-style:none;
+    display: flex;
+    flex-direction: column;
 }
 .expo-content ul li{
     font-size: 24px;
@@ -29,4 +31,41 @@
     text-align: center;
 
 }
+
+@media (max-width:600px){
+    .Expo-heading{
+        text-align: center;
+    }
+    .expo-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .expo-container div img{
+       width: 100%;
+       padding: 0px;
+    }
+    .expo-content{
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        width: 400px;
+    }
+    
+    .expo-content ul{
+     position: relative;
+     top: -80px;
+     padding: 10px;
+     width: 400px;
+     text-align: center;
+    }
+    .expo-content ul li {
+        font-size: 15px;
+        padding: 4px 10px;
+    }
+    .expo-content ul li span{
+        font-size: 16px;
+    }
+}
+
 

@@ -27,3 +27,20 @@
 .skill-title{
     margin-left: 280px;
 }
+
+@media (max-width:600xpx){
+    .skill-container{
+        overflow: hidden;
+    }
+    .skill-container .skill-title{
+        font-size: 20px;
+        padding: 0;
+        margin: -280px !important;
+        text-align: start;
+    }
+    .skill-section1{
+       display: flex;
+       flex-wrap: wrap;
+
+    }
+}
