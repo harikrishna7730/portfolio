@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../Hero/Hero.css"
 const AutoType = ({ texts, speed = 150, pause = 1000 }) => {
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
@@ -46,7 +46,7 @@ const AutoType = ({ texts, speed = 150, pause = 1000 }) => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex, texts, speed, pause, isFinished]);
 
-  return <span style={{color:"#D4AF37"}}>{displayText}</span>;
+  return <span style={{color:"#D4AF37"}} className="Auto-type-text">{displayText}</span>;
 };
 
 export default AutoType;

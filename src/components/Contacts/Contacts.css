@@ -76,4 +76,11 @@
       opacity: 1;
     }
   }
+
+  @media (max-width:600px){
+    .card{
+
+      margin-left: 146px;
+    }
+  }
   

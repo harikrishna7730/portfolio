@@ -17,9 +17,9 @@ const Hero = () => {
     <img
       src={pimg}
       alt="myProfile"
-      loading="lazy"
       height={500}
       width={500}
+      loading='eager'
       className="floating-img"
     />
   </div>

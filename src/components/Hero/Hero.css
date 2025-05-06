@@ -53,11 +53,12 @@
       text-align: center;
       height: 100vh;
       overflow: none;
+      margin-bottom: 60px;
     }
   
     .hero-content {
       padding: 10px;
-      display: none;
+  
     }
   
     .hero-img {
@@ -67,5 +68,11 @@
     .floating-img {
       width: 350px;
       height: 350px;
+    }
+    .hero-content h1{
+      font-size: 25px;
+    }
+    .Auto-type-text{
+      font-size: 26px;
     }
   }

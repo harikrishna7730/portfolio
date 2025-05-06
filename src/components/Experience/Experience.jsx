@@ -1,13 +1,24 @@
 import React from 'react'
 import "./Experience.css"
 import Vigovia from "../../assets/vigovia_img.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Experience = () => {
+      useEffect(() => {
+          AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true,     // animate only once
+            easing: 'ease-in-out',
+          });
+        }, []);
   return (
     <>
-   <h1 className='Expo-heading' id='experience'>Experience</h1>
+   <h1 className='Expo-heading' id='experience' data-aos="fade-down">Experience</h1>
     <div className='expo-container' >
-        <div>
-          <img src={Vigovia} alt='company-img' loading='lazy'/>
+        <div >
+          <img src={Vigovia} data-aos="flip-left" alt='company-img' loading='lazy' width={500} height={300}/>
         </div>
         <div className='expo-content'>
             <ul>

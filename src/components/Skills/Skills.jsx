@@ -19,107 +19,120 @@ import vercel_icon from "../../assets/vercel.svg"
 import render_icon from "../../assets/render.png"
 import vscode_icon from "../../assets/vscode.jpeg"
 import Firebase_icon from "../../assets/firebase.webp"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
+
 const Skills = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration in ms
+          once: true,     // animate only once
+          easing: 'ease-in-out',
+        });
+      }, []);
   return (
    <>
-   <div className="skills-heading" id='skills'>
+   <div className="skills-heading" id='skills' data-aos="fade-down">
     <h1>Skills</h1>
    </div>
    <div className='skill-container'>
-    <div className='skill-title'>
+    <div className='skill-title' data-aos="fade-right">
        <h1>Frontend</h1>
     </div>
    
-    <div className='skill-section1'>
+    <div className='skill-section1' data-aos="zoom-in">
         <div className='skill'>
-            <img src={html_icon} alt='' width={80} />
+            <img src={html_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>HTML 5</span>
         </div>
         <div className='skill'>
-            <img src={css_icon} alt='' width={80}/>
+            <img src={css_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>CSS 3</span>
         </div>
         <div className='skill'>
-            <img src={javascript_icon} alt='' width={80}/>
+            <img src={javascript_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>JavaScript</span>
         </div>
         <div className='skill'>
-            <img src={reactjs_icon} alt='' width={80}/>
+            <img src={reactjs_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>React.js</span>
         </div>
         <div className='skill'>
-            <img src={bootstrap5_icon} alt='' width={80}/>
+            <img src={bootstrap5_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>Bootstrap5</span>
         </div>
         <div className='skill'>
-            <img src={TailwindCss_icon} alt='' width={80}/>
+            <img src={TailwindCss_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>TailwindCss</span>
         </div>
         <div className='skill'>
-            <img src={Aos_icon} alt='' width={80} height={76}/>
+            <img src={Aos_icon} alt='' width={80} height={76} loading='lazy'/>
             <span>AOS</span>
         </div>
     </div>
-    <div className='skill-title'>
+    <div className='skill-title' data-aos="fade-right">
        <h1>Backend</h1>
     </div>
-        <div className='skill-section1'>
+        <div className='skill-section1' data-aos="zoom-in">
        <div className='skill'>
-            <img src={nodejs_icon} alt='' width={80} />
+            <img src={nodejs_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>NodeJs</span>
         </div>
         <div className='skill'>
-            <img src={Expressjs_icon} alt=''  width={84}  height={76} />
+            <img src={Expressjs_icon} alt=''  width={84}  height={76}loading='lazy' />
             <span >ExpressJs</span>
         </div>
         <div className='skill'>
-            <img src={restfulApi_icon} alt='' width={80} />
+            <img src={restfulApi_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>REST API</span>
         </div>
     </div>
-    <div className='skill-title'>
+    <div className='skill-title' data-aos="fade-right">
        <h1>Database</h1>
     </div>
-    <div className='skill-section1'>
+    <div className='skill-section1' data-aos="zoom-in">
        <div className='skill'>
-            <img src={mysql_icon} alt='' width={80} />
+            <img src={mysql_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>MYSQL</span>
         </div>
         <div className='skill'>
-            <img src={mongoDb_icon} alt='' width={80} />
+            <img src={mongoDb_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>MongoDB</span>
         </div>
     </div>
-    <div className='skill-title'>
+    <div className='skill-title' data-aos="fade-right">
        <h1>Tools</h1>
     </div>
-    <div className='skill-section1'>
+    <div className='skill-section1' data-aos="zoom-in">
        <div className='skill'>
-            <img src={git_icon} alt='' width={80} />
+            <img src={git_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>Git</span>
         </div>
         <div className='skill'>
-            <img src={github_icon} alt='' width={80} />
+            <img src={github_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>GitHub</span>
         </div>
         <div className='skill'>
-            <img src={vscode_icon} alt='' width={80} />
+            <img src={vscode_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>VS code</span>
         </div>
         <div className='skill'>
-            <img src={postman_icon} alt='' width={80} />
+            <img src={postman_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>Postman</span>
         </div>
         <div className='skill'>
-            <img src={vercel_icon} alt='' width={80} />
+            <img src={vercel_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>Vercel</span>
         </div>
         <div className='skill'>
-            <img src={render_icon} alt='' width={80} />
+            <img src={render_icon} alt='' width={80} height={80} loading='lazy'/>
             <span>Render</span>
         </div>
         <div className='skill'>
-            <img src={Firebase_icon} alt='' width={80} />
+            <img src={Firebase_icon} alt='' width={80}  height={80} loading='lazy'/>
             <span>Firebase</span>
         </div>
     </div>

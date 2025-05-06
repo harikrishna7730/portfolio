@@ -43,7 +43,6 @@ const GetInTouch = () => {
     </div>
     <hr />
  <div className='get-in-touch-container' id='contact'>
-  
  <div className="contact-container">
       <h2>Get in Touch 📬</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -81,13 +80,13 @@ const GetInTouch = () => {
         <Contacts/>
         <p>
   <a href="tel:7730800724" style={{ textDecoration: "none", color: "inherit" }}>
-    <img src={PhNumber_icon} alt="Phone Icon" width={40} />: 7730800724
+    <img src={PhNumber_icon} alt="Phone Icon" width={40}  height={40} loading='lazy'/>: 7730800724
   </a>
 </p>
 
 <p>
   <a href="mailto:harikrishna2677@gmail.com" style={{ textDecoration: "none", color: "inherit" }}>
-    <img src={Email_icon} alt="Email Icon" width={40} />: harikrishna2677@gmail.com
+    <img src={Email_icon} alt="Email Icon" width={40} height={40} loading='lazy'/>: harikrishna2677@gmail.com
   </a>
 </p>
 
@@ -98,7 +97,7 @@ const GetInTouch = () => {
     rel="noopener noreferrer"
     style={{ textDecoration: "none", color: "inherit" }}
   >
-    <img src={Address_icon} alt="Address Icon" width={40} />: Hyderabad, KPHB colony
+    <img src={Address_icon} alt="Address Icon" width={40} height={40} loading='lazy' />: Hyderabad, KPHB colony
   </a>
 </p>
 

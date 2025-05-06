@@ -1,80 +1,4 @@
-/* header{
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-}
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: aliceblue;
-}
-header nav h1{
-    font-size: 35px;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    list-style-type: none;
-    padding: 20px;
-}
-nav ul li{
-    padding: 10px 20px;
-    font-size: 22px;
-    cursor: pointer;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-nav ul li a {
-    position: relative;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 5px 0;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #df684a;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #122222;
-  }
-  
-  nav ul li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  
-  .menu{
-    position: relative;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-   }
-   .menu span{
-     height: 4px;
-     border-radius: 10px;
-     background: black;
-   } */
-
-   /* Navbar.css */
-
+/* 
 header {
   background:aliceblue;
   color: #fff;
@@ -108,7 +32,7 @@ nav {
   transition: 0.3s;
 }
 
-/* Navigation links */
+
 ul {
   display: flex;
   gap: 20px;
@@ -122,7 +46,80 @@ ul li a {
   padding: 10px 20px;
     font-size: 22px;
     cursor: pointer;
+} */
+
+header {
+  background: aliceblue;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  color: black;
+  padding: 20px;
 }
+
+header nav h1 {
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu span {
+  width: 25px;
+  height: 3px;
+  background-color: #151212;
+  transition: 0.3s;
+}
+
+/* Navigation links */
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+ul li a {
+  color: #150f0f;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 10px;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Underline starts from center and expands to both ends */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 0%;
+  height: 2px;
+  background-color: #007BFF; /* Customize this */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+  transform-origin: center;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+
 
 /* ✅ Responsive for max-width 600px */
 @media (max-width: 600px) {
