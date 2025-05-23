@@ -29,7 +29,7 @@ const Skills = () => {
     useEffect(() => {
         AOS.init({
           duration: 1000, // animation duration in ms
-          once: true,     // animate only once
+          once: false,     // animate only once
           easing: 'ease-in-out',
         });
       }, []);
