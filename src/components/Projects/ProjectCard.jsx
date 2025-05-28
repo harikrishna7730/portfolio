@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectCard.css';
-import Chatbot from '../chatbot';
+import Chatbot from '../../components/Chatbot';
 
 const ProjectCard = ({ image, name, description, liveLink, githubLink }) => {
   return (
