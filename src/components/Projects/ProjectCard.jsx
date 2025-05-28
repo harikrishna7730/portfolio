@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProjectCard.css';
-import Chatbot from '../../components/Chatbot';
 
 const ProjectCard = ({ image, name, description, liveLink, githubLink }) => {
   return (
@@ -21,7 +20,6 @@ const ProjectCard = ({ image, name, description, liveLink, githubLink }) => {
       </div>
     </div>
     <div>
-      <Chatbot/>
     </div>
     </>
   );
