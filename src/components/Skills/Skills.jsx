@@ -1,4 +1,4 @@
-import React from 'react'
+// import React, { useRef, useState } from 'react'
 import "./Skills.css"
 import html_icon from "../../assets/html-5.png"
 import css_icon from "../../assets/css-3.png"
@@ -22,10 +22,20 @@ import Firebase_icon from "../../assets/firebase.webp"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+// import Lottie from "lottie-react";
 
-
+// import menuV2Animation from '../../assets/menuV2.json';
 
 const Skills = () => {
+//  const lottieRef = useRef();
+//   const [playing, setPlaying] = useState(false);
+
+//   const toggleAnimation = () => {
+//     const lottie = lottieRef.current;
+//     playing ? lottie.goToAndStop(0, true) : lottie.goToAndPlay(0, true);
+//     setPlaying(!playing);
+//   };
+
     useEffect(() => {
         AOS.init({
           duration: 1000, // animation duration in ms
@@ -36,8 +46,18 @@ const Skills = () => {
   return (
    <>
    <div className="skills-heading" id='skills' data-aos="fade-down">
-    <h1>Skills</h1>
-   </div>
+    <h1>Skills
+
+    </h1>
+     {/* <Lottie
+        lottieRef={lottieRef}
+        animationData={menuV2Animation}
+        loop={false}
+        autoplay={false}
+        onClick={toggleAnimation}
+        style={{ width: 300, height: 300, cursor: "pointer" }}
+      /> */}
+         </div>
    <div className='skill-container'>
     <div className='skill-title' data-aos="fade-right">
        <h1>Frontend</h1>

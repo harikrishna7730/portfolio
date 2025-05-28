@@ -1,4 +1,5 @@
 import './App.css'
+import Chatbot from './components/chatbot'
 import GetInTouch from './components/Contacts/GetInTouch'
 import Experience from './components/Experience/Experience'
 import Hero from './components/Hero/Hero'
@@ -15,6 +16,7 @@ function App() {
     <Experience/>
     <Skills/>
     <Projects/>
+    <Chatbot/>
     <GetInTouch/>
     </div>
     </>
