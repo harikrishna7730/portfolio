@@ -10,7 +10,9 @@ const Hero = () => {
     <div className='hero-content'>
      <h1>Hello </h1>
      <h1>I'm  <AutoType texts={["Hari Krishna", "a Web Developer", "MERN Stack developer"]}/></h1>
-     <Contacts/>
+     <div className='Hero-section-Contacts'>
+        <Contacts/>
+     </div>
     </div>
     <div className="hero-img">
   <div className="rotated-border">
