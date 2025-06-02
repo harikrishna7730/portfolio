@@ -2,12 +2,11 @@
     font-size: 55px;
     padding:25px 40px;
     margin: 50px 10px;
-    color:white;
     text-align: center;
 }
 
 .skill-container{
-   color: white;
+  
 }
 .skill{
     text-align: center;
@@ -28,7 +27,7 @@
     margin-left: 280px;
 }
 
-@media (max-width:600px){
+@media (min-width:320px) and (max-width:720px){
     .skill-container{
         overflow: hidden;
         padding: 0;

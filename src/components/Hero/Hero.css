@@ -7,10 +7,11 @@
     height: 90vh;
     width: 100%;
 }
-
+.Hero-section-Contacts{
+padding: 0;
+}
 .hero-content{
-  width: 600px; 
-  color:white;
+  width: 600px;
 }
 .hero-content h1{
     font-size: 55px;
@@ -18,11 +19,16 @@
 
 .hero-content .Auto-type{
     color: blueviolet;
+    /* height: 200px; */
+}
+.Auto-type-text{
+  height: 200px;
 }
 .hero-img img{
     border-radius: 50%;
     object-fit: contain;
     background-color: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .hero-img {
     display: flex;
@@ -46,7 +52,7 @@
   }
   
 
-  @media (max-width: 600px) {
+  @media (min-width:320px) and (max-width:720px) {
     .Hero-container {
       flex-direction: column-reverse;
       justify-content: center;

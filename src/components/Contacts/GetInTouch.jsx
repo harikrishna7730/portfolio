@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./GetInTouch.css";
-import Contacts from "./Contacts";
+// import Contacts from "./Contacts";
 import PhNumber_icon from "../../assets/viber.png";
 import Email_icon from "../../assets/email.png";
 import Address_icon from "../../assets/location.png";
@@ -81,7 +81,7 @@ const GetInTouch = () => {
           </form>
         </div>
         <div className="contact-left-content">
-          <Contacts />
+          {/* <Contacts /> */}
           <p>
             <a
               href="tel:7730800724"

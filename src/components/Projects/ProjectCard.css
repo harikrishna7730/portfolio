@@ -89,7 +89,7 @@
   }
   
   /* 🔄 Responsive */
-  @media (max-width: 768px) {
+  @media (min-width:320px) and (max-width:720px) {
     .project-card {
       max-width: 75%;
     }
