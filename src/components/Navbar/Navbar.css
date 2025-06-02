@@ -1,52 +1,4 @@
-/* 
-header {
-  background:aliceblue;
-  color: #fff;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-  color: black;
-  padding: 20px;
-}
-header nav h1{
-  font-size: 35px;
-}
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.menu span {
-  width: 25px;
-  height: 3px;
-  background-color: #151212;
-  transition: 0.3s;
-}
-
-
-ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-ul li a {
-  color: #150f0f;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 10px 20px;
-    font-size: 22px;
-    cursor: pointer;
-} */
 
 header {
   background: aliceblue;
@@ -126,6 +78,8 @@ ul li a:hover::after {
   display: inline-block;
   width: 50px;
   height: 26px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 .theme-switch input {

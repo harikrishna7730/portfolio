@@ -1,52 +1,47 @@
 import React, { useState, useEffect } from "react";
-import "../Hero/Hero.css"
+import "./AutoType.css"
 const AutoType = ({ texts, speed = 150, pause = 1000 }) => {
-  const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isFinished, setIsFinished] = useState(false);
+  const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {
-    if (isFinished) return;
-
     const currentText = texts[textIndex];
     let timeout;
 
     if (!isDeleting) {
-      timeout = setTimeout(() => {
-        setDisplayText(currentText.substring(0, charIndex + 1));
-        setCharIndex((prev) => prev + 1);
-      }, speed);
-
-      if (charIndex === currentText.length) {
-        if (textIndex === texts.length - 1) {
-          // Final text reached, stop after it fully types out
-          timeout = setTimeout(() => {
-            setDisplayText(texts[0]); // go back to name
-            setIsFinished(true);
-          }, pause);
-        } else {
+      if (charIndex < currentText.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentText.substring(0, charIndex + 1));
+          setCharIndex((prev) => prev + 1);
+        }, speed);
+      } else {
+        timeout = setTimeout(() => {
           setIsDeleting(true);
-          timeout = setTimeout(() => {}, pause);
-        }
+        }, pause);
       }
     } else {
-      timeout = setTimeout(() => {
-        setDisplayText(currentText.substring(0, charIndex - 1));
-        setCharIndex((prev) => prev - 1);
-      }, speed / 2);
-
-      if (charIndex === 0) {
+      if (charIndex > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentText.substring(0, charIndex - 1));
+          setCharIndex((prev) => prev - 1);
+        }, speed / 2);
+      } else {
         setIsDeleting(false);
-        setTextIndex((prev) => prev + 1);
+        setTextIndex((prev) => (prev + 1) % texts.length);
       }
     }
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, textIndex, texts, speed, pause, isFinished]);
+  }, [charIndex, isDeleting, textIndex, texts, speed, pause]);
 
-  return <span style={{color:"#D4AF37"}} className="Auto-type-text">{displayText}</span>;
+  return (
+    <span style={{ color: "#D4AF37" }} className="Auto-type-text">
+      {displayText}
+      <span className="blinking-cursor">|</span>
+    </span>
+  );
 };
 
 export default AutoType;

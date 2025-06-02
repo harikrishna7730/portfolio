@@ -20,7 +20,7 @@
   }
   /* instagram*/
   .containerOne:hover {
-    background-color: #d62976;
+    background-color: #1f3d77;
     transition-duration: 0.3s;
     transform: scale(1.2);
   }
@@ -32,13 +32,13 @@
   }
   /* linkdin*/
   .containerThree:hover {
-    background-color: #0072b1;
+    background-color: #317e5e;
     transition-duration: 0.3s;
     transform: scale(1.2);
   }
   /* Whatsapp*/
   .containerFour:hover {
-    background-color: #128c7e;
+    background-color: #041917;
     transition-duration: 0.3s;
     transform: scale(1.2);
   }

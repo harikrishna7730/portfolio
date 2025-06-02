@@ -2,7 +2,6 @@ import React from "react";
 import "./Experience.css";
 import Vigovia from "../../assets/vigovia_img.png";
 
-
 const Experience = () => {
 
   return (
@@ -24,29 +23,6 @@ const Experience = () => {
                 <div> <strong>Duration:</strong><p>6 Months</p></div>
                 <div><strong>Location:</strong><p>Remote</p></div>
           </div>
-          {/* <div className="Expo-content">
-            <ul>
-              <li>
-                <strong>Role:</strong> Frontend Developer
-              </li>
-              <li>
-                <strong>Project:</strong> Designed and implemented a responsive
-                travel booking website using React.js, enhancing the user
-                journey from search to checkout.
-              </li>
-              <li>
-                <strong>Responsibilities:</strong> Developed reusable UI
-                components, integrated dynamic data with APIs, and ensured
-                cross-browser compatibility.
-              </li>
-              <li>
-                <strong>Duration:</strong> 6 Months
-              </li>
-              <li>
-                <strong>Location:</strong> Remote
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </>

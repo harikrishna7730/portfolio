@@ -24,7 +24,7 @@ const Contacts = () => {
         </div>
         <div>
           <a
-            className="socialContainer containerThree"
+            className="socialContainer containerTwo"
             href="https://www.linkedin.com/in/hari-krishna-tangalapally-8343a026a/"
             target="_blank"
             aria-label="linkedin"
@@ -37,7 +37,7 @@ const Contacts = () => {
         </div>
         <div>
           <a
-            className="socialContainer containerFour"
+            className="socialContainer containerThree"
             href="https://wa.me/7730800724"
             target="_blank"
             aria-label="whatsapp"
@@ -48,9 +48,22 @@ const Contacts = () => {
             </svg>
           </a>
         </div>
+        <div>
+          <a
+            className="socialContainer containerFour"
+            href="mailto:harikrishna2677@gmail.com"
+            target="_blank"
+            aria-label="email"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 512 512" className="socialSvg emailSvg">
+              <path d="M502.3 190.8L327.4 338.1c-18.3 15.2-45.5 15.2-63.8 0L9.7 190.8C3.9 186.4 0 179.3 0 171.7V88c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v83.7c0 7.6-3.9 14.7-9.7 19.1zM48 128l208 173.2L464 128H48zm464 55.5L327.4 384.3c-35.9 29.9-87.9 29.9-123.8 0L0 183.5V424c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V183.5z" />
+            </svg>
+          </a>
+        </div>
       </div>
     </>
   );
 };
-          
+
 export default Contacts;
